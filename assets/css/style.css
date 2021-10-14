@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+:root {
+  --primary-color: rgba(36, 36, 36, 0.25);
+  --secondary-color: #303030;
+  --accent-color: #1b1c1d;
+  --text-primary: #fff;
+  --ff-primary: 'Poppins', sans-serif;
+  --ff-secondary: 'Rubik', sans-serif;
+  --results-bg: rgba(30, 30, 30, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(36, 36, 36, 1);
+  background: radial-gradient(
+    circle,
+    rgba(56, 60, 60, 1) 0%,
+    rgba(36, 36, 36, 1) 100%
+  );
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.custom-nav {
+  background-color: inherit;
+  font-family: var(--ff-secondary);
+}
+
+.results-container {
+  background-color: var(--results-bg) !important;
+  color: white;
+  width: auto;
+  height: auto;
+  border-radius: 10px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+}
+
+#api-call {
+  background-color: var(--results-bg);
+  color: white;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+  margin-top: 10rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background: var(--primary-color);
+  backdrop-filter: saturate(180%) blur(10px) opacity(20%);
+  box-shadow: 0.85rem 0.85rem 0.5rem var(--accent-color);
+  font-family: var(--ff-secondary);
+  padding: 5rem;
+  border: 0.25px solid var(--accent-color);
+  border-radius: 1rem;
+  /* backdrop-filter: blur(5px); */
+}
+
+.search-container h1 {
+  font-family: var(--ff-primary);
+  font-weight: 500;
+}
+
+.main-search-container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--accent-color);
+  color: var(--text-primary);
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+img,
+table {
+  border-radius: 5px !important;
+}
+
+#api-call h1 {
+  margin-bottom: 3rem;
+}

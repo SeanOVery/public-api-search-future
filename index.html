@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>API Search</title>
+  </head>
+
+  <body>
+    <header class="custom-nav">
+      <nav class="ui fixed inverted menu">
+        <div class="ui container custom-nav">
+          <a href="#" class="header item"> API Search </a>
+          <a href="#" class="item">Home</a>
+          <div class="ui simple dropdown item">
+            Recent Searches <i class="dropdown icon"></i>
+            <div id="recent-search-dropdown" class="menu"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Search Container-->
+      <section class="search-container">
+        <h1>Public API Search</h1>
+        <form class="search-form" action="./secondpage.html">
+          <div class="main-search-container">
+            <div class="ui floating dropdown labeled icon button">
+              <i class="filter icon"></i>
+              <span class="text">API List</span>
+              <div class="menu api-type-select">
+                <div class="ui icon search input">
+                  <i class="search icon"></i>
+                  <input
+                    type="text"
+                    placeholder="Search APIs"
+                    id="api-type-search"
+                  />
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                  <i class="tags icon"></i>
+                  Api Types
+                </div>
+                <div class="scrolling menu api-type-select">
+                  <div data-select class="item">
+                    <div class="ui red empty circular label"></div>
+                    Art
+                  </div>
+                  <div data-select class="item">
+                    <div class="ui green empty circular label"></div>
+                    Books
+                  </div>
+                  <div data-select class="item">
+                    <div class="ui blue empty circular label"></div>
+                    FoodAndDrinks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden" id="hidden-dropdown">
+              <select class="ui dropdown" id="api-select-dropdown"></select>
+            </div>
+          </div>
+          <button type="submit" class="positive ui button custom-search-btn">
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
